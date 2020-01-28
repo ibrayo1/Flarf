@@ -5,7 +5,7 @@ Modified by JK to be IE7+/ Firefox compatible
 For this and over 400+ free scripts, visit http://javascriptkit.com
 */
 
-var trailLength = 8 // The length of trail (8 by default; put more for longer "tail")
+var trailLength = 20 // The length of trail (8 by default; put more for longer "tail")
 var path = "img/cursor.gif" // URL of your image
 
 var standardbody=(document.compatMode=="CSS1Compat")? document.documentElement : document.body //create reference to common "body" across doctypes
