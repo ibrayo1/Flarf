@@ -1,0 +1,84 @@
+body{
+    background-image: url('../img/bg1.png');
+    background-repeat: no-repeat;
+    background-position: contain;
+    background-size: cover;
+}
+
+.container1 {
+    text-align: center;
+    background: rgb(32, 32, 32, 0.5);
+}
+
+.container1 p {
+    color: white;
+    font-size: 50px;
+    padding: 15px;
+}
+
+.container2 {
+    text-align: center;
+    background: rgb(40, 40, 40, 0.5);
+}
+
+.container2 p{
+    color: white;
+    font-size: 45px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.container3 {
+    text-align: center;
+    background: rgb(48, 48, 48, 0.5);
+}
+
+.container3 p{
+    color: white;
+    font-size: 40px;
+    padding: 15px;
+}
+
+.container4 {
+    text-align: center;
+    background:  rgb(56, 56, 56, 0.5);
+}
+
+.container4 p{
+    color: white;
+    font-size: 35px;
+    padding: 15px;
+}
+
+.container5 {
+    text-align: center;
+    background:  rgb(64, 64, 64, 0.5);
+}
+
+.container5 p{
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.container6 {
+    text-align: center;
+    background:  rgb(72, 72, 72, 0.5);
+}
+
+.container6 p{
+    color: white;
+    font-size: 25px;
+    padding: 15px;
+}
+
+.container7 {
+    text-align: center;
+    background:  rgb(80, 80, 80, 0.5);
+}
+
+.container7 p{
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+}
