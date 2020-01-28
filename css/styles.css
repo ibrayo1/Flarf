@@ -3,6 +3,7 @@ body{
     background-repeat: no-repeat;
     background-position: contain;
     background-size: cover;
+    overflow-x: hidden;
 }
 
 .container1 {
