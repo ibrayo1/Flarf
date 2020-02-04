@@ -1,9 +1,7 @@
 body{
-    background-image: url('../img/bg1.png');
+    background-image: url('../img/bg3.jpg');
     background-repeat: no-repeat;
-    background-position: contain;
     background-size: cover;
-    overflow-x: hidden;
 }
 
 .container1 {
@@ -14,12 +12,11 @@ body{
 .container1 p {
     color: white;
     font-size: 50px;
-    padding: 15px;
-    display: inline-block;
 }
 
 .container2 {
-    text-align: center;
+    text-align: right;
+    padding-right: 100px;
     background: rgb(40, 40, 40, 0.5);
 }
 
@@ -28,12 +25,12 @@ body{
     font-size: 45px;
     padding: 15px;
     font-weight: bold;
+    display: inline-block;
 }
 
 .container3 {
     text-align: center;
     background: rgb(48, 48, 48, 0.5);
-    background-image: url('../img/giphy.gif');
 }
 
 .container3 p{
@@ -51,10 +48,12 @@ body{
     color: white;
     font-size: 35px;
     padding: 15px;
+    display: inline-block;
 }
 
 .container5 {
-    text-align: center;
+    text-align: left;
+    padding-left: 100px;
     background:  rgb(64, 64, 64, 0.5);
 }
 
@@ -75,9 +74,9 @@ body{
     padding: 15px;
 }
 
-.container7 {
+.container7{
     text-align: center;
-    background:  rgb(80, 80, 80, 0.5);
+    background: rgb(80, 80, 80, 0.5);
 }
 
 .container7 p{
@@ -87,8 +86,8 @@ body{
 }
 
 .animate {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 150px;
     position: relative;
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
@@ -102,8 +101,8 @@ body{
   /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
     0%   { left:0px; top:0px;}
-    25%  { left:200px; top:0px;}
-    50%  { left:200px; top:200px;}
+    25%  { left:-200px; top:0px;}
+    50%  { left:-200px; top:200px;}
     75%  { left:0px; top:200px;}
     100% { left:0px; top:0px;}
 }
@@ -111,8 +110,8 @@ body{
 /* Standard syntax */
 @keyframes example {
     0%   { left:0px; top:0px;}
-    25%  { left:200px; top:0px;}
-    50%  { left:200px; top:200px;}
+    25%  { left:-200px; top:0px;}
+    50%  { left:-200px; top:200px;}
     75%  { left:0px; top:200px;}
     100% { left:0px; top:0px;}
 }

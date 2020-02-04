@@ -5,17 +5,18 @@
         <meta charset="UTF-8">
 
         <!--Custom styles-->
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/page1.css">
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script type="text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
         <script type="text/javascript" src="js/trail.js"></script>
     </head>
 
-    <body >
+    <body id="boody" >
 
         <div class="container1" >
             <p>Did you mean: lol nah bro</p>
-            <img id="first-pic" src="img/bg1.jpg" style="padding-top: 15px;" class="animate" >
+            <img id="first-pic" src="img/page1/jes.jpg" style="padding-top: 15px;" class="animate" >
         </div>
 
         <div class="container2">
@@ -23,7 +24,7 @@
         </div>
         
         <div class="container3">
-            <img src="img/giphy.gif" width="10%" >
+            <img src="img/page1/giphy.gif" width="10%" id="nobrogif">
             <p>If you say 'naw' in game</p>
         </div>
 
@@ -42,17 +43,17 @@
 
         <div class="container7">
             <p>tilt or nah bro</p>
-            <a href="page2.html"><img src="img/redcup-guy.jpg" width="10%" /></a>
+            <a href="page2.html"><img src="img/page1/redcup-guy.jpg" width="10%" /></a>
             <p>tilt or nah bro</p>
         </div>
 
         
 
-    </body >
+    </body>
 
     <script>
         document.getElementById('first-pic').onclick = function(){
-            alert('lol nah bro, what\'s a facebook');
+            $('#first-pic').toggle("explode", {pieces: 32 }, 500 );
         };
     </script>
 
