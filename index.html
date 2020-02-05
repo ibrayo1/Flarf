@@ -43,18 +43,51 @@
 
         <div class="container7">
             <p>tilt or nah bro</p>
-            <a href="page2.html"><img src="img/page1/redcup-guy.jpg" width="10%" /></a>
+            <img id="redcup" src="img/page1/redcup-guy.jpg" width="10%" />
             <p>tilt or nah bro</p>
         </div>
-
-        
 
     </body>
 
     <script>
+        var cnt = 0;
+        var bruh = true;
+
         document.getElementById('first-pic').onclick = function(){
+            alert('nope');
             $('#first-pic').toggle("explode", {pieces: 32 }, 500 );
         };
+
+        document.getElementById('redcup').onclick = function(){
+           if(cnt == 1){
+               alert('lol, jk this actualy was the correct answer');
+               window.location.href = "page2.html";
+               cnt = 0;
+           }else {
+               alert('woops, you activated a virus');
+               randomText();
+               cnt++;
+           }
+           console.log(i);
+        };
+
+        function randomText(){
+            var x = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            var y = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+            var text = "tilt or nah bro";
+            var elem = document.createElement("div");
+            elem.textContent = text;
+            elem.style.pointerEvents = "none";
+            elem.style.position = "absolute";
+            elem.style.fontSize = "50px";
+            elem.style.left = Math.round(Math.random() * x) + "px";
+            elem.style.top = Math.round(Math.random() * y) + "px";
+            document.body.appendChild(elem);
+
+            setTimeout(randomText, 50);
+        }
+
     </script>
 
 </html>
