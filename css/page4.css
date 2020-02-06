@@ -1,0 +1,102 @@
+body{
+    background-image: url('../img/page4/bg4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container1 {
+    text-align: right;
+    background: rgb(32, 32, 32, 0.5);
+}
+
+.container1 p {
+    color: white;
+    font-size: 50px;
+}
+
+.container2 {
+    text-align: center;
+    background: rgb(40, 40, 40, 0.5);
+}
+
+.container2 p{
+    color: white;
+    font-size: 45px;
+    padding: 15px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.container3 {
+    text-align: left;
+    background: rgb(48, 48, 48, 0.5);
+}
+
+.container3 p{
+    color: red;
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.container4 {
+    text-align: center;
+    background:  rgb(56, 56, 56, 0.5);
+}
+
+.container4 p{
+    color: white;
+    font-size: 35px;
+    padding: 15px;
+    display: inline-block;
+}
+
+.container5 {
+    text-align: right;
+    background:  rgb(64, 64, 64, 0.5);
+}
+
+.container5 p{
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.container6 {
+    text-align: center;
+    background:  rgb(72, 72, 72, 0.5);
+}
+
+.container6 p{
+    color: orange;
+    font-size: 25px;
+    padding: 15px;
+}
+
+.animate {
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 0s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+  /* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   { left:0px; top:0px;}
+    25%  { left:-700px; top:0px;}
+    50%  { left:-700px; top:0px;}
+    75%  { left:0px; top:0px;}
+    100% { left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   { left:0px; top:0px;}
+    25%  { left:-700px; top:0px;}
+    50%  { left:-700px; top:0px;}
+    75%  { left:0px; top:0px;}
+    100% { left:0px; top:0px;}
+}

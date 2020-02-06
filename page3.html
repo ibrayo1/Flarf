@@ -19,7 +19,7 @@
         </div>
   
         <div class="container2">
-            <img style="display: inline;" src="img/page3/thanksbrofist.png" class="animate" width="150px"/>
+            <a href="index.html" ><img style="display: inline;" src="img/page3/thanksbrofist.png" class="animate" width="150px"/></a>
             <p style="display: inline;">Thanks a lot</p>
         </div>
 
@@ -28,11 +28,14 @@
         </div>
     
         <div class="container4">
-            <p>Bro</p>
+            <a href="page4.html"><p>Bro</p></a>
         </div>
     
+        <br/>
+
         <div class="container5">
-            <p>Thanks a lot...</p>
+            <p style="display: inline-block;" >Thanks a lot...</p>
+            <img id="thanksbro" style="width: 150px;" src="img/page3/thanksbro.jpg" class="animate2" />
         </div>
     
         <div class="container6">
@@ -47,6 +50,11 @@
     </body>
 
     <script>
+
+        document.getElementById('thanksbro').onclick = function(){
+            alert('i did it for the lulz');
+            $('#thanksbro').toggle("explode", {pieces: 16}, 500);
+        }
 
         var img = null;
         randomImg();

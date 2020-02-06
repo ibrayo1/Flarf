@@ -96,6 +96,17 @@ body{
     animation-iteration-count: infinite;
 }
 
+.animate2 {
+    position: relative;
+    -webkit-animation-name: example2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 0s; /* Safari 4.0 - 8.0 */
+    animation-name: example2;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
   /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
     0%   { left:0px; top:0px;}
@@ -110,6 +121,24 @@ body{
     0%   { left:0px; top:0px;}
     25%  { left:-700px; top:0px;}
     50%  { left:-700px; top:0px;}
+    75%  { left:0px; top:0px;}
+    100% { left:0px; top:0px;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example2 {
+    0%   { left:0px; top:0px;}
+    25%  { left:700px; top:0px;}
+    50%  { left:700px; top:0px;}
+    75%  { left:0px; top:0px;}
+    100% { left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example2 {
+    0%   { left:0px; top:0px;}
+    25%  { left:700px; top:0px;}
+    50%  { left:700px; top:0px;}
     75%  { left:0px; top:0px;}
     100% { left:0px; top:0px;}
 }
