@@ -76,9 +76,15 @@
            console.log(i);
         };
 
+        function getRandomPosition(element) {
+            var x = document.body.offsetHeight-element.clientHeight;
+            var y = document.body.offsetWidth-element.clientWidth;
+            var randomX = Math.floor(Math.random()*x);
+            var randomY = Math.floor(Math.random()*y);
+            return [randomX,randomY];
+        }
+
         function randomText(){
-            var x = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-            var y = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 
             var text = "tilt or nah bro";
             var elem = document.createElement("div");
@@ -86,9 +92,10 @@
             elem.style.pointerEvents = "none";
             elem.style.position = "absolute";
             elem.style.fontSize = "50px";
-            elem.style.left = Math.round(Math.random() * x) + "px";
-            elem.style.top = Math.round(Math.random() * y) + "px";
             document.body.appendChild(elem);
+            var xy = getRandomPosition(elem);
+            elem.style.top = xy[0] + 'px';
+            elem.style.left = xy[1] + 'px';
 
             setTimeout(randomText, 50);
         }
