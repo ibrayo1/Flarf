@@ -1,5 +1,5 @@
 body{
-    background-image: url('../img/bg3.jpg');
+    background-image: url('../img/page3/bg3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -86,32 +86,30 @@ body{
 }
 
 .animate {
-    width: 200px;
-    height: 150px;
     position: relative;
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 0s; /* Safari 4.0 - 8.0 */
     animation-name: example;
-    animation-duration: 4s;
-    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-delay: 0s;
     animation-iteration-count: infinite;
 }
 
   /* Safari 4.0 - 8.0 */
 @-webkit-keyframes example {
     0%   { left:0px; top:0px;}
-    25%  { left:-200px; top:0px;}
-    50%  { left:-200px; top:200px;}
-    75%  { left:0px; top:200px;}
+    25%  { left:-700px; top:0px;}
+    50%  { left:-700px; top:0px;}
+    75%  { left:0px; top:0px;}
     100% { left:0px; top:0px;}
 }
 
 /* Standard syntax */
 @keyframes example {
     0%   { left:0px; top:0px;}
-    25%  { left:-200px; top:0px;}
-    50%  { left:-200px; top:200px;}
-    75%  { left:0px; top:200px;}
+    25%  { left:-700px; top:0px;}
+    50%  { left:-700px; top:0px;}
+    75%  { left:0px; top:0px;}
     100% { left:0px; top:0px;}
 }
