@@ -15,8 +15,8 @@ body{
 }
 
 .container2 {
+    background-image: url('../img/page4/blackmirror.jpg');
     text-align: center;
-    background: rgb(40, 40, 40, 0.5);
 }
 
 .container2 p{
@@ -72,31 +72,9 @@ body{
     padding: 15px;
 }
 
-.animate {
-    position: relative;
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
-    -webkit-animation-delay: 0s; /* Safari 4.0 - 8.0 */
-    animation-name: example;
-    animation-duration: 2s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-}
-
-  /* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
-    0%   { left:0px; top:0px;}
-    25%  { left:-700px; top:0px;}
-    50%  { left:-700px; top:0px;}
-    75%  { left:0px; top:0px;}
-    100% { left:0px; top:0px;}
-}
-
-/* Standard syntax */
-@keyframes example {
-    0%   { left:0px; top:0px;}
-    25%  { left:-700px; top:0px;}
-    50%  { left:-700px; top:0px;}
-    75%  { left:0px; top:0px;}
-    100% { left:0px; top:0px;}
+#animate {
+    position: absolute;
+    top: 0px; 
+    left: 0px; 
+    transition: all 1s;
 }

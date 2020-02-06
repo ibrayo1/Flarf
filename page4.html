@@ -14,6 +14,10 @@
 
     <body>
 
+        <div>
+            <img id="animate" src="img/page4/ninja.jpg" />
+        </div>
+
         <div class="container1">
             <p>Is it bad to charge your phone to 100?</p>
         </div>
@@ -36,9 +40,34 @@
 
         <div class="container6">
             <p>should i let my phone battery die</p>
+            <img style="width: 200px;" src="img/page4/charging-cable.jpg" />
         </div>
 
     </body >
 
+    <script>
+
+        myMove();
+
+        function getRandomPosition(element) {
+            var x = document.body.offsetHeight-element.clientHeight;
+            var y = document.body.offsetWidth-element.clientWidth;
+            var randomX = Math.floor(Math.random()*x);
+            var randomY = Math.floor(Math.random()*y);
+            return [randomX,randomY];
+        }
+
+        function myMove() {
+            
+            var elem = document.getElementById("animate");
+            var xy = getRandomPosition(elem);
+            elem.style.top = xy[0] + 'px';
+            elem.style.left = xy[1] + 'px';
+
+            setInterval(myMove, 1600);
+        }
+
+
+    </script>
 
 </html>
