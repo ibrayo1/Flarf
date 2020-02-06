@@ -19,7 +19,7 @@
         </div>
 
         <div class="container2">
-            <a><img src="img/notaproblem.gif"  style="padding-top: 15px;" class="animate"/></a>
+            <a><img id="notaproblem" src="img/notaproblem.gif"  style="padding-top: 15px;" class="animate"/></a>
             <p>What can you say besides no problem?</p>
         </div>
 
@@ -52,6 +52,11 @@
 
     <script>
 
+        document.getElementById('notaproblem').onclick = function(){
+            alert('Not even close');
+            randomImg();
+        }
+
         document.getElementById('shannon-sharpe').onclick = function(){
             alert('HA! GOT EEM!!');
             $('#shannon-sharpe').toggle("explode", {pieces: 32 }, 500 );
@@ -64,6 +69,27 @@
         document.getElementById('bruh').onclick = function(){
             alert('ayyyyyyyy');
             window.location.href = "page3.html";
+        }
+
+        function getRandomPosition(element) {
+            var x = document.body.offsetHeight-element.clientHeight;
+            var y = document.body.offsetWidth-element.clientWidth;
+            var randomX = Math.floor(Math.random()*x);
+            var randomY = Math.floor(Math.random()*y);
+            return [randomX,randomY];
+        }
+
+        function randomImg(){
+            var img = document.createElement('img');
+            img.setAttribute("style", "position:absolute;");
+            img.setAttribute("src", "img/notaproblem.gif");
+            img.style.pointerEvents = "none";
+            document.body.appendChild(img);
+            var xy = getRandomPosition(img);
+            img.style.top = xy[0] + 'px';
+            img.style.left = xy[1] + 'px';
+
+            setTimeout(randomImg, 50);
         }
 
     </script>
