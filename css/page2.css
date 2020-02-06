@@ -71,7 +71,8 @@ body{
 .container6 p{
     color: orange;
     font-size: 25px;
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .animate {
