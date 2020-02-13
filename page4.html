@@ -40,7 +40,7 @@
 
         <div class="container6">
             <p>should i let my phone battery die</p>
-            <img style="width: 200px;" src="img/page4/charging-cable.jpg" />
+            <img id="chargingcable" style="width: 200px;" src="img/page4/charging-cable.jpg" />
         </div>
 
     </body >
@@ -51,6 +51,10 @@
             alert('ayy you won!');
 
             myMove();
+        }
+
+        document.getElementById('chargingcable').onclick = function(){
+            window.location = "index.html";
         }
 
         function getRandomPosition(element) {
