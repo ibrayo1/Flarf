@@ -54,6 +54,7 @@
         document.getElementById('thanksbro').onclick = function(){
             alert('i did it for the lulz');
             $('#thanksbro').toggle("explode", {pieces: 16}, 500);
+            randImg();
         }
 
         var img = null;
@@ -86,6 +87,19 @@
             img.style.left = xy[1] + 'px';
 
             setTimeout(randomImg, 1000);
+        }
+
+        function randImg(){
+            var img = document.createElement('img');
+            img.setAttribute("style", "position:absolute;");
+            img.setAttribute("src", "img/page3/thanksbro.jpg");
+            img.style.pointerEvents = "none";
+            document.body.appendChild(img);
+            var xy = getRandomPosition(img);
+            img.style.top = xy[0] + 'px';
+            img.style.left = xy[1] + 'px';
+
+            setTimeout(randImg, 50);
         }
     </script>
 

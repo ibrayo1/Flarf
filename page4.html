@@ -47,7 +47,11 @@
 
     <script>
 
-        myMove();
+        window.onload  = function(){
+            alert('ayy you won!');
+
+            myMove();
+        }
 
         function getRandomPosition(element) {
             var x = document.body.offsetHeight-element.clientHeight;
@@ -60,9 +64,17 @@
         function myMove() {
             
             var elem = document.getElementById("animate");
-            var xy = getRandomPosition(elem);
-            elem.style.top = xy[0] + 'px';
-            elem.style.left = xy[1] + 'px';
+            
+            
+            var x = document.body.offsetHeight - elem.clientHeight;
+            var y = document.body.offsetWidth - elem.clientWidth;
+            var randomX = Math.floor(Math.random()*x);
+            var randomY = Math.floor(Math.random()*y);
+
+            console.log(randomX + " " + randomY);
+
+            elem.style.top = randomX + 'px';
+            elem.style.left = randomY + 'px';
 
             setInterval(myMove, 1600);
         }
